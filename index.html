@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wthDija</title>
+  <style>
+    /* General styling for body */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://images.alphacoders.com/134/1344766.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Lock screen overlay */
+    .lockscreen {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 80%;
+      max-width: 600px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #FFD700;
+    }
+
+    /* Password input */
+    input[type="password"] {
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 16px;
+      border: 2px solid #FFD700;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 400px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Button styles */
+    .button {
+      background-color: #FF6347;
+      color: black;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 20px 10px;
+    }
+
+    .button2 {
+      background-color: #1E90FF;
+      color: black;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 20px 10px;
+    }
+
+    .button:hover {
+      background-color: #FF4500;
+    }
+
+    .button2:hover {
+      background-color: #4682B4;
+    }
+
+    /* Message styling */
+    .message {
+      color: lightyellow;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 30px;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.5;
+      max-height: 70vh;
+      overflow-y: scroll;
+      white-space: pre-wrap;
+    }
+
+    /* Confetti style */
+    .confetti {
+      position: absolute;
+      top: 0;
+      pointer-events: none;
+      font-size: 24px;
+      animation: confetti-fall 5s linear infinite;
+      color: #FFD700;
+    }
+
+    /* Animation for confetti */
+    @keyframes confetti-fall {
+      0% {
+        opacity: 1;
+        transform: translateY(-50px) rotate(0deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(800px) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lockscreen" id="lockscreen">
+    <h1>If you're Dija please unlock this, figure out the password -Batman🦇</h1>
+    <input type="password" id="passwordInput" placeholder="Enter Password">
+    <button class="button" id="unlockButton" onclick="checkPassword()">Unlock</button>
+  </div>
+
+  <div class="message" id="message" style="display:none;">
+    <p>
+      ohhhh Hiiiii dija!!!!!🎀
+      
+      i know yk who i am and i just wanna say....🐺
+      
+      I know I made a mistake
+and I deeply regret the way my words landed.
+
+But I wish you could see past this one thing and the other fights before it too 
+the care, the laughs, the moments that meant so much
+
+god plss i wasn't even serious and i didn't realise u weren't liking the jokes
+
+i know i went overboard cuz you just blocked me even ur text abt blocking me i thought it was a joke until u actually did it. 
+
+i purely meant it in a roasting joking way... we always did that too. I'm really sorry 
+
+i didn't mean to hurt you with that joke and you could've just told me to stfu and stay in my limits you were joking with me too and i didn't even think you'll be offended by it.
+
+Blocking me from ur priv account is understandable...maybe..but seriously?? ur main acc too? i can't see ur videos? ur followers count? can't see you grow?? after all that?? Don't do this pls...
+
+ you never share what you're thinking like really if you're mad, sad, annoyed or anything u don't show it or tell the reason...its my fault i should've stayed in my limits. I'm so sorry for not seeing that you weren't liking my jokes.
+
+ It’s painful to know that one moment erased everything else,
+
+ because in all the time we've shared,
+there was never anything but respect and care.
+I never meant to hurt you, and I hope you can remember that.
+
+   ✨️i made this site to say these things(took me so many hours more than 5 it was so hard) cuz there was no other way 
+   
+   If you're reading all this wow you really figured out the password and that's impressive lol...give me a chance
+   
+    i will never say anything to you even if i mean it as a joke..u already know how much i respect you and what you're doing i always care abt you also i always compliment youuuu cuz i mean it everytime.
+    
+    Even if i don't compliment you that much just know i just don't wanna be annoying cuz too much of everything is bad
+    
+    so i was just trying to be myself and joke with you like a true friend even started to call u like "tere" n "tujhe" and stuff
+    
+    instead of being really respectful all the time.. 
+    i just acted how u acted to me besides the jokess those were just me being weird✨️
+    
+    So please of u click the forgive button and still dont wanna unblock me -tehamimoazzam35@gmail.com
+       this my email...
+       
+       i could've made a website far farrr better than this👾 but it already took me 6 hours and i'm so sick too 😭
+       
+       just email me that u dont hate me and its just ur decision to stay away from me....but pls give me a chance UNBLOCK MEEE why u always think of ending it yaar👹
+       
+       Chor du ga jaan iske baad bas ek email kr dena :(
+    </p>
+    <button class="button2" id="button1" onclick="btn1Action()">F*ck off, I won't unblock you</button>
+    <button class="button" id="button2" onclick="btn2Action()">I need time, but I forgive you</button>
+  </div>
+
+  <script>
+    let song1 = new Audio('https://drive.google.com/uc?export=view&id=1LzoPIdY4JIY8KgzD4ONAzl00N0nPXnwR');
+    let song2 = new Audio('https://drive.google.com/uc?export=view&id=1M1fhaG4tkUkdc29ck9r_MTaAP0srGttD');
+    let joyfulMusic = new Audio('https://drive.google.com/uc?export=view&id=1M61dGGsXG_YXfn51i7hOoa_etcvnNIQb');
+
+    // Function to check password and play song
+    function checkPassword() {
+      const password = document.getElementById('passwordInput').value;
+      if (password === '11aug23sep') {
+        song1.pause();
+        song2.play();
+        document.getElementById('lockscreen').style.display = 'none';
+        document.getElementById('message').style.display = 'block';
+        startEmojiRain();
+      } else {
+        alert("Ahh thats not right maybe hann wohh try our DOB's🎀");
+      }
+    }
+
+    // Function for button 2 action (confetti + music)
+    function btn2Action() {
+      joyfulMusic.play();
+      let confettiInterval = setInterval(createConfetti, 200);
+
+      setTimeout(() => {
+        clearInterval(confettiInterval);
+        joyfulMusic.pause();
+      }, 12000); // 12 seconds duration
+    }
+
+    // Function to create confetti elements
+    function createConfetti() {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.innerText = ["🥳", "🎉", "🎊"][Math.floor(Math.random() * 3)];
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.fontSize = Math.random() * 15 + 10 + "px";
+      document.body.appendChild(confetti);
+      
+      setTimeout(() => {
+        confetti.remove();
+      }, 5000); // remove confetti after it falls
+    }
+
+    // Function to handle button 1 click (teleports button 1 and shows emoji rain and "Kyu?" text)
+    function btn1Action() {
+      for (let i = 0; i < 50; i++) {
+        let emojiRain = document.createElement('div');
+        emojiRain.classList.add('confetti');
+        emojiRain.textContent = "👹 Kyu?";
+        emojiRain.style.fontSize = `${Math.random() * 25 + 15}px`;
+        emojiRain.style.left = `${Math.random() * 100}vw`;
+        emojiRain.style.animationDuration = `${Math.random() * 2 + 2}s`;
+        document.body.appendChild(emojiRain);
+
+        // Remove each emoji rain element after animation
+        setTimeout(() => emojiRain.remove(), 3000);
+      }
+    }
+  </script>
+ 
+</body>
+</html>
